@@ -14,7 +14,7 @@ Hide sponsored cards in Google Discover.
 
 ## Installation
 
-1. Download the APK from [Releases](../../releases)
+1. Download the APK from [Releases](https://github.com/hxreborn/discover-ads-filter/releases)
 
 2. Enable the module in LSPosed.
 3. Scope it to Google App (`com.google.android.googlequicksearchbox`).
@@ -36,6 +36,6 @@ The app scans the installed Google App, resolves the hook targets for that AGSA 
 
 ## License
 
-<a href="LICENSE"><img src=".github/assets/gplv3.svg" height="90" alt="GPLv3" /></a>
+<a href="https://github.com/hxreborn/discover-ads-filter/blob/main/LICENSE"><img src="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/.github/assets/gplv3.svg" height="90" alt="GPLv3" /></a>
 
-This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for details.
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](https://github.com/hxreborn/discover-ads-filter/blob/main/LICENSE) for details.
