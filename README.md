@@ -1,11 +1,13 @@
-# Google Discover Ads Filter
+<div align="center">
 
-Hide sponsored cards in Google Discover.
+<img src="https://socialify.git.ci/hxreborn/discover-ads-filter/image?description=1&font=Inter&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fhxreborn%2Fdiscover-ads-filter%2Frefs%2Fheads%2Fmain%2Fartwork%2Ficon.png&name=1&pattern=Brick+Wall&theme=Auto" alt="discover-ads-filter" width="640" height="320" />
 
 ![Android 11+](https://img.shields.io/badge/Android-11%2B-3DDC84?style=flat&logo=android&logoColor=white)
 ![AGSA 17.14+](https://img.shields.io/badge/AGSA-17.14%2B-4285F4?style=flat&logo=google&logoColor=white)
 ![libxposed API 101](https://img.shields.io/badge/libxposed-API_101-ff69b4?style=flat)
 ![DexKit 2.2.0](https://img.shields.io/badge/DexKit-2.2.0-E65100?style=flat)
+
+</div>
 
 ## Requirements
 
