@@ -1,19 +1,21 @@
 <div align="center">
 
-<img src="https://socialify.git.ci/hxreborn/discover-ads-filter/image?custom_description=Filter+ads+and+sponsored+content+from+Google+Discover+via+Xposed+framework.&description=1&font=Inter&issues=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fhxreborn%2Fdiscover-ads-filter%2Frefs%2Fheads%2Fmain%2Fartwork%2Ficon.png&name=1&owner=1&pattern=Brick+Wall&stargazers=1&theme=Auto" alt="discover-ads-filter" width="640" height="320" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/assets/banner_dark.png">
+  <img src="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/assets/banner_light.png" alt="Discover Feed Filter" width="640">
+</picture>
 
-<p>An Xposed module that hides sponsored cards and ads from the Google Discover feed in the Pixel Launcher -1 screen and inside the Google app itself.</p>
+<p>An Xposed module that removes ads, sponsored cards and clickbait from the Google Discover feed, in the Pixel Launcher -1 screen and inside the Google app itself. Hide stories by headline or source with your own filters, and share articles with their real link instead of Google's redirect.</p>
 
-![AGSA 17.14+](https://img.shields.io/badge/AGSA-17.14%2B-4285F4?style=flat-square&logo=google&logoColor=white)
-![libxposed API 101](https://img.shields.io/badge/libxposed-API_101-ff69b4?style=flat-square)
-![DexKit 2.2.0](https://img.shields.io/badge/DexKit-2.2.0-E65100?style=flat-square)
+<img src="https://img.shields.io/badge/Android-11%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 11+">
+<img src="https://img.shields.io/badge/libxposed-API_101%2B-ff69b4?style=for-the-badge" alt="libxposed API 101+">
 
 </div>
 
 ## Requirements
 
 - Android 11+
-- LSPosed manager with libxposed API 101 support
+- An Xposed manager with libxposed API 101 support, such as [LSPosed](https://github.com/LSPosed/LSPosed) or [Vector](https://github.com/JingMatrix/Vector)
 
 ## Installation
 
@@ -23,15 +25,28 @@
     <a href="https://f-droid.org/es/packages/eu.hxreborn.discoveradsfilter/"><img src="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/.github/assets/badge_fdroid.png" height="60" alt="Get it on F-Droid" /></a>
 
 2. Enable the module in LSPosed and scope it to `com.google.android.googlequicksearchbox`.
-3. Open the Discover Ads Filter app and tap Scan to resolve hook targets.
+3. Open the Discover Feed Filter app and tap Scan to resolve hook targets.
 4. Force-stop Google App and relaunch.
+
+## Filter packs
+
+Starter filters you can import from News filters, menu, Import:
+
+- [clickbait-en.json](https://github.com/hxreborn/discover-ads-filter/blob/main/presets/clickbait-en.json), general English clickbait
+- [clickbait-es.json](https://github.com/hxreborn/discover-ads-filter/blob/main/presets/clickbait-es.json), general Spanish clickbait
+
+Clickbait looks different in every language. If yours is missing, open a PR with a pack and I'll include it.
 
 ## How It Works
 
 The app scans the installed Google App with DexKit, resolving hook targets via protobuf extension field numbers and type signatures, and stores the result in a versioned cache. The hooked process uses the cached targets to filter ad items from the Discover feed.
 
+## Related
+
+Also dislike ads in the Google Play Store? Try [playstore-adblock](https://github.com/hxreborn/playstore-adblock), a sister module.
+
 ## License
 
 <a href="https://github.com/hxreborn/discover-ads-filter/blob/main/LICENSE"><img src="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/.github/assets/gplv3.svg" height="90" alt="GPLv3" /></a>
 
-This project is licensed under the GNU General Public License v3.0. See [LICENSE](https://github.com/hxreborn/discover-ads-filter/blob/main/LICENSE) for details.
+This project is licensed under the GNU General Public License v3.0.
